@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Assistant - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #project-info {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        #controls {
+            margin-top: 20px;
+        }
+
+        #start-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="project-info">
+        <h1>Luna Assistant</h1>
+        <p>Welcome to Luna Assistant, your virtual assistant powered by Python and Eel.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Voice recognition and commands</li>
+            <li>Task automation (open applications, take screenshots, etc.)</li>
+            <li>Email sending and file sharing capabilities</li>
+            <li>Integration with external services like Wikipedia, news, and more</li>
+            <li>Interactive games and entertainment</li>
+        </ul>
+
+        <h2>About the Project</h2>
+        <p>Luna Assistant is a personal assistant project developed using Python, Eel, and various external libraries. It aims to provide a seamless and interactive experience for users to perform tasks using voice commands.</p>
+
+        <h2>Getting Started</h2>
+        <p>Click the "Start Luna Assistant" button below to initiate the assistant. You can then interact with Luna using voice commands and explore its features.</p>
+    </div>
+
+    <div id="controls">
+        <button id="start-button">Start Luna Assistant</button>
+    </div>
+
+    <script src="/eel.js"></script>
+    <script>
+        function startAssistant() {
+            eel.start()();
+        }
+
+        document.getElementById('start-button').addEventListener('click', startAssistant);
+    </script>
+</body>
+</html>
